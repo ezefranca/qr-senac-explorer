@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBC36BBC19B5F16B00D432CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC36BBB19B5F16B00D432CD /* Foundation.framework */; };
+		BBC36BBE19B5F16B00D432CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC36BBD19B5F16B00D432CD /* CoreGraphics.framework */; };
+		BBC36BC019B5F16B00D432CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC36BBF19B5F16B00D432CD /* UIKit.framework */; };
+		BBC36BC619B5F16B00D432CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBC36BC419B5F16B00D432CD /* InfoPlist.strings */; };
+		BBC36BC819B5F16B00D432CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC36BC719B5F16B00D432CD /* main.m */; };
+		BBC36BCC19B5F16B00D432CD /* WCIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC36BCB19B5F16B00D432CD /* WCIAppDelegate.m */; };
+		BBC36BCF19B5F16B00D432CD /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC36BCD19B5F16B00D432CD /* Main_iPhone.storyboard */; };
+		BBC36BD219B5F16B00D432CD /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC36BD019B5F16B00D432CD /* Main_iPad.storyboard */; };
+		BBC36BD519B5F16B00D432CD /* WCIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC36BD419B5F16B00D432CD /* WCIViewController.m */; };
+		BBC36BD719B5F16B00D432CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC36BD619B5F16B00D432CD /* Images.xcassets */; };
+		BBC36BDE19B5F16B00D432CD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC36BDD19B5F16B00D432CD /* XCTest.framework */; };
+		BBC36BDF19B5F16B00D432CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC36BBB19B5F16B00D432CD /* Foundation.framework */; };
+		BBC36BE019B5F16B00D432CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC36BBF19B5F16B00D432CD /* UIKit.framework */; };
+		BBC36BE819B5F16B00D432CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBC36BE619B5F16B00D432CD /* InfoPlist.strings */; };
+		BBC36BEA19B5F16B00D432CD /* GameficationSenacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC36BE919B5F16B00D432CD /* GameficationSenacTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BBC36BE119B5F16B00D432CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBC36BB019B5F16B00D432CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBC36BB719B5F16B00D432CD;
+			remoteInfo = GameficationSenac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BBC36BB819B5F16B00D432CD /* GameficationSenac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameficationSenac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC36BBB19B5F16B00D432CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BBC36BBD19B5F16B00D432CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BBC36BBF19B5F16B00D432CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BBC36BC319B5F16B00D432CD /* GameficationSenac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameficationSenac-Info.plist"; sourceTree = "<group>"; };
+		BBC36BC519B5F16B00D432CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BBC36BC719B5F16B00D432CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BBC36BC919B5F16B00D432CD /* GameficationSenac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GameficationSenac-Prefix.pch"; sourceTree = "<group>"; };
+		BBC36BCA19B5F16B00D432CD /* WCIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCIAppDelegate.h; sourceTree = "<group>"; };
+		BBC36BCB19B5F16B00D432CD /* WCIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCIAppDelegate.m; sourceTree = "<group>"; };
+		BBC36BCE19B5F16B00D432CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		BBC36BD119B5F16B00D432CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		BBC36BD319B5F16B00D432CD /* WCIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCIViewController.h; sourceTree = "<group>"; };
+		BBC36BD419B5F16B00D432CD /* WCIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCIViewController.m; sourceTree = "<group>"; };
+		BBC36BD619B5F16B00D432CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BBC36BDC19B5F16B00D432CD /* GameficationSenacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameficationSenacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBC36BDD19B5F16B00D432CD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BBC36BE519B5F16B00D432CD /* GameficationSenacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameficationSenacTests-Info.plist"; sourceTree = "<group>"; };
+		BBC36BE719B5F16B00D432CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BBC36BE919B5F16B00D432CD /* GameficationSenacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameficationSenacTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBC36BB519B5F16B00D432CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC36BBE19B5F16B00D432CD /* CoreGraphics.framework in Frameworks */,
+				BBC36BC019B5F16B00D432CD /* UIKit.framework in Frameworks */,
+				BBC36BBC19B5F16B00D432CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBC36BD919B5F16B00D432CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC36BDE19B5F16B00D432CD /* XCTest.framework in Frameworks */,
+				BBC36BE019B5F16B00D432CD /* UIKit.framework in Frameworks */,
+				BBC36BDF19B5F16B00D432CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBC36BAF19B5F16B00D432CD = {
+			isa = PBXGroup;
+			children = (
+				BBC36BC119B5F16B00D432CD /* GameficationSenac */,
+				BBC36BE319B5F16B00D432CD /* GameficationSenacTests */,
+				BBC36BBA19B5F16B00D432CD /* Frameworks */,
+				BBC36BB919B5F16B00D432CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBC36BB919B5F16B00D432CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBC36BB819B5F16B00D432CD /* GameficationSenac.app */,
+				BBC36BDC19B5F16B00D432CD /* GameficationSenacTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBC36BBA19B5F16B00D432CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBC36BBB19B5F16B00D432CD /* Foundation.framework */,
+				BBC36BBD19B5F16B00D432CD /* CoreGraphics.framework */,
+				BBC36BBF19B5F16B00D432CD /* UIKit.framework */,
+				BBC36BDD19B5F16B00D432CD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBC36BC119B5F16B00D432CD /* GameficationSenac */ = {
+			isa = PBXGroup;
+			children = (
+				BBC36BCA19B5F16B00D432CD /* WCIAppDelegate.h */,
+				BBC36BCB19B5F16B00D432CD /* WCIAppDelegate.m */,
+				BBC36BCD19B5F16B00D432CD /* Main_iPhone.storyboard */,
+				BBC36BD019B5F16B00D432CD /* Main_iPad.storyboard */,
+				BBC36BD319B5F16B00D432CD /* WCIViewController.h */,
+				BBC36BD419B5F16B00D432CD /* WCIViewController.m */,
+				BBC36BD619B5F16B00D432CD /* Images.xcassets */,
+				BBC36BC219B5F16B00D432CD /* Supporting Files */,
+			);
+			path = GameficationSenac;
+			sourceTree = "<group>";
+		};
+		BBC36BC219B5F16B00D432CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBC36BC319B5F16B00D432CD /* GameficationSenac-Info.plist */,
+				BBC36BC419B5F16B00D432CD /* InfoPlist.strings */,
+				BBC36BC719B5F16B00D432CD /* main.m */,
+				BBC36BC919B5F16B00D432CD /* GameficationSenac-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BBC36BE319B5F16B00D432CD /* GameficationSenacTests */ = {
+			isa = PBXGroup;
+			children = (
+				BBC36BE919B5F16B00D432CD /* GameficationSenacTests.m */,
+				BBC36BE419B5F16B00D432CD /* Supporting Files */,
+			);
+			path = GameficationSenacTests;
+			sourceTree = "<group>";
+		};
+		BBC36BE419B5F16B00D432CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBC36BE519B5F16B00D432CD /* GameficationSenacTests-Info.plist */,
+				BBC36BE619B5F16B00D432CD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBC36BB719B5F16B00D432CD /* GameficationSenac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBC36BED19B5F16B00D432CD /* Build configuration list for PBXNativeTarget "GameficationSenac" */;
+			buildPhases = (
+				BBC36BB419B5F16B00D432CD /* Sources */,
+				BBC36BB519B5F16B00D432CD /* Frameworks */,
+				BBC36BB619B5F16B00D432CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameficationSenac;
+			productName = GameficationSenac;
+			productReference = BBC36BB819B5F16B00D432CD /* GameficationSenac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BBC36BDB19B5F16B00D432CD /* GameficationSenacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBC36BF019B5F16B00D432CD /* Build configuration list for PBXNativeTarget "GameficationSenacTests" */;
+			buildPhases = (
+				BBC36BD819B5F16B00D432CD /* Sources */,
+				BBC36BD919B5F16B00D432CD /* Frameworks */,
+				BBC36BDA19B5F16B00D432CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBC36BE219B5F16B00D432CD /* PBXTargetDependency */,
+			);
+			name = GameficationSenacTests;
+			productName = GameficationSenacTests;
+			productReference = BBC36BDC19B5F16B00D432CD /* GameficationSenacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBC36BB019B5F16B00D432CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WCI;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Danilo Makoto Ikuta";
+				TargetAttributes = {
+					BBC36BDB19B5F16B00D432CD = {
+						TestTargetID = BBC36BB719B5F16B00D432CD;
+					};
+				};
+			};
+			buildConfigurationList = BBC36BB319B5F16B00D432CD /* Build configuration list for PBXProject "GameficationSenac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBC36BAF19B5F16B00D432CD;
+			productRefGroup = BBC36BB919B5F16B00D432CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBC36BB719B5F16B00D432CD /* GameficationSenac */,
+				BBC36BDB19B5F16B00D432CD /* GameficationSenacTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBC36BB619B5F16B00D432CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC36BD219B5F16B00D432CD /* Main_iPad.storyboard in Resources */,
+				BBC36BD719B5F16B00D432CD /* Images.xcassets in Resources */,
+				BBC36BCF19B5F16B00D432CD /* Main_iPhone.storyboard in Resources */,
+				BBC36BC619B5F16B00D432CD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBC36BDA19B5F16B00D432CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC36BE819B5F16B00D432CD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBC36BB419B5F16B00D432CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC36BCC19B5F16B00D432CD /* WCIAppDelegate.m in Sources */,
+				BBC36BC819B5F16B00D432CD /* main.m in Sources */,
+				BBC36BD519B5F16B00D432CD /* WCIViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBC36BD819B5F16B00D432CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC36BEA19B5F16B00D432CD /* GameficationSenacTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BBC36BE219B5F16B00D432CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBC36BB719B5F16B00D432CD /* GameficationSenac */;
+			targetProxy = BBC36BE119B5F16B00D432CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BBC36BC419B5F16B00D432CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBC36BC519B5F16B00D432CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BBC36BCD19B5F16B00D432CD /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBC36BCE19B5F16B00D432CD /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		BBC36BD019B5F16B00D432CD /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBC36BD119B5F16B00D432CD /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		BBC36BE619B5F16B00D432CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBC36BE719B5F16B00D432CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBC36BEB19B5F16B00D432CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBC36BEC19B5F16B00D432CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBC36BEE19B5F16B00D432CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameficationSenac/GameficationSenac-Prefix.pch";
+				INFOPLIST_FILE = "GameficationSenac/GameficationSenac-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BBC36BEF19B5F16B00D432CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameficationSenac/GameficationSenac-Prefix.pch";
+				INFOPLIST_FILE = "GameficationSenac/GameficationSenac-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BBC36BF119B5F16B00D432CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GameficationSenac.app/GameficationSenac";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameficationSenac/GameficationSenac-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GameficationSenacTests/GameficationSenacTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BBC36BF219B5F16B00D432CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GameficationSenac.app/GameficationSenac";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameficationSenac/GameficationSenac-Prefix.pch";
+				INFOPLIST_FILE = "GameficationSenacTests/GameficationSenacTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBC36BB319B5F16B00D432CD /* Build configuration list for PBXProject "GameficationSenac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBC36BEB19B5F16B00D432CD /* Debug */,
+				BBC36BEC19B5F16B00D432CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBC36BED19B5F16B00D432CD /* Build configuration list for PBXNativeTarget "GameficationSenac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBC36BEE19B5F16B00D432CD /* Debug */,
+				BBC36BEF19B5F16B00D432CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BBC36BF019B5F16B00D432CD /* Build configuration list for PBXNativeTarget "GameficationSenacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBC36BF119B5F16B00D432CD /* Debug */,
+				BBC36BF219B5F16B00D432CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBC36BB019B5F16B00D432CD /* Project object */;
+}
