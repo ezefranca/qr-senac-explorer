@@ -7,6 +7,7 @@
 //
 
 #import "WCIViewController.h"
+#import "BluetoothViewController.h"
 
 @interface WCIViewController ()
 

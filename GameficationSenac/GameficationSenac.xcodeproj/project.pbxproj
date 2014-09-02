@@ -22,6 +22,11 @@
 		BBC36BE019B5F16B00D432CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC36BBF19B5F16B00D432CD /* UIKit.framework */; };
 		BBC36BE819B5F16B00D432CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBC36BE619B5F16B00D432CD /* InfoPlist.strings */; };
 		BBC36BEA19B5F16B00D432CD /* GameficationSenacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC36BE919B5F16B00D432CD /* GameficationSenacTests.m */; };
+		F724ADFC19B65DBF00BDEB49 /* BluetoothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F724ADFB19B65DBF00BDEB49 /* BluetoothViewController.m */; };
+		F724AE0219B6688100BDEB49 /* CNBluetoothCentral.m in Sources */ = {isa = PBXBuildFile; fileRef = F724ADFF19B6688000BDEB49 /* CNBluetoothCentral.m */; };
+		F724AE0319B6688100BDEB49 /* CoinBLEDemo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F724AE0019B6688000BDEB49 /* CoinBLEDemo-Info.plist */; };
+		F724AE0819B668B100BDEB49 /* webService.m in Sources */ = {isa = PBXBuildFile; fileRef = F724AE0519B668B100BDEB49 /* webService.m */; };
+		F724AE0A19B67F8B00BDEB49 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F724AE0919B67F8B00BDEB49 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,16 @@
 		BBC36BE519B5F16B00D432CD /* GameficationSenacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameficationSenacTests-Info.plist"; sourceTree = "<group>"; };
 		BBC36BE719B5F16B00D432CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BBC36BE919B5F16B00D432CD /* GameficationSenacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameficationSenacTests.m; sourceTree = "<group>"; };
+		F724ADFA19B65DBF00BDEB49 /* BluetoothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothViewController.h; sourceTree = "<group>"; };
+		F724ADFB19B65DBF00BDEB49 /* BluetoothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothViewController.m; sourceTree = "<group>"; };
+		F724ADFE19B6688000BDEB49 /* CNBluetoothCentral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNBluetoothCentral.h; sourceTree = "<group>"; };
+		F724ADFF19B6688000BDEB49 /* CNBluetoothCentral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNBluetoothCentral.m; sourceTree = "<group>"; };
+		F724AE0019B6688000BDEB49 /* CoinBLEDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CoinBLEDemo-Info.plist"; sourceTree = "<group>"; };
+		F724AE0119B6688000BDEB49 /* CoinBLEDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoinBLEDemo-Prefix.pch"; sourceTree = "<group>"; };
+		F724AE0519B668B100BDEB49 /* webService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = webService.m; path = Classes/webService.m; sourceTree = "<group>"; };
+		F724AE0619B668B100BDEB49 /* webService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = webService.h; path = Classes/webService.h; sourceTree = "<group>"; };
+		F724AE0719B668B100BDEB49 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Classes/Reachability.h; sourceTree = "<group>"; };
+		F724AE0919B67F8B00BDEB49 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Classes/Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +129,12 @@
 		BBC36BC119B5F16B00D432CD /* GameficationSenac */ = {
 			isa = PBXGroup;
 			children = (
+				F724AE0419B6689E00BDEB49 /* Classes */,
 				BBC36BCA19B5F16B00D432CD /* WCIAppDelegate.h */,
 				BBC36BCB19B5F16B00D432CD /* WCIAppDelegate.m */,
 				BBC36BCD19B5F16B00D432CD /* Main_iPhone.storyboard */,
+				F724ADFA19B65DBF00BDEB49 /* BluetoothViewController.h */,
+				F724ADFB19B65DBF00BDEB49 /* BluetoothViewController.m */,
 				BBC36BD019B5F16B00D432CD /* Main_iPad.storyboard */,
 				BBC36BD319B5F16B00D432CD /* WCIViewController.h */,
 				BBC36BD419B5F16B00D432CD /* WCIViewController.m */,
@@ -153,6 +171,30 @@
 				BBC36BE619B5F16B00D432CD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F724ADFD19B6688000BDEB49 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				F724ADFE19B6688000BDEB49 /* CNBluetoothCentral.h */,
+				F724ADFF19B6688000BDEB49 /* CNBluetoothCentral.m */,
+				F724AE0019B6688000BDEB49 /* CoinBLEDemo-Info.plist */,
+				F724AE0119B6688000BDEB49 /* CoinBLEDemo-Prefix.pch */,
+			);
+			name = Bluetooth;
+			path = Classes/Bluetooth;
+			sourceTree = "<group>";
+		};
+		F724AE0419B6689E00BDEB49 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F724AE0919B67F8B00BDEB49 /* Reachability.m */,
+				F724AE0519B668B100BDEB49 /* webService.m */,
+				F724AE0619B668B100BDEB49 /* webService.h */,
+				F724AE0719B668B100BDEB49 /* Reachability.h */,
+				F724ADFD19B6688000BDEB49 /* Bluetooth */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F724AE0319B6688100BDEB49 /* CoinBLEDemo-Info.plist in Resources */,
 				BBC36BD219B5F16B00D432CD /* Main_iPad.storyboard in Resources */,
 				BBC36BD719B5F16B00D432CD /* Images.xcassets in Resources */,
 				BBC36BCF19B5F16B00D432CD /* Main_iPhone.storyboard in Resources */,
@@ -255,7 +298,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBC36BCC19B5F16B00D432CD /* WCIAppDelegate.m in Sources */,
+				F724AE0219B6688100BDEB49 /* CNBluetoothCentral.m in Sources */,
+				F724ADFC19B65DBF00BDEB49 /* BluetoothViewController.m in Sources */,
+				F724AE0A19B67F8B00BDEB49 /* Reachability.m in Sources */,
 				BBC36BC819B5F16B00D432CD /* main.m in Sources */,
+				F724AE0819B668B100BDEB49 /* webService.m in Sources */,
 				BBC36BD519B5F16B00D432CD /* WCIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +518,7 @@
 				BBC36BEF19B5F16B00D432CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BBC36BF019B5F16B00D432CD /* Build configuration list for PBXNativeTarget "GameficationSenacTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +527,7 @@
 				BBC36BF219B5F16B00D432CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
