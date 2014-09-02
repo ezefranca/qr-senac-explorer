@@ -27,6 +27,8 @@
 		F724AE0319B6688100BDEB49 /* CoinBLEDemo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F724AE0019B6688000BDEB49 /* CoinBLEDemo-Info.plist */; };
 		F724AE0819B668B100BDEB49 /* webService.m in Sources */ = {isa = PBXBuildFile; fileRef = F724AE0519B668B100BDEB49 /* webService.m */; };
 		F724AE0A19B67F8B00BDEB49 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F724AE0919B67F8B00BDEB49 /* Reachability.m */; };
+		F724AE0D19B6814B00BDEB49 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F724AE0C19B6814B00BDEB49 /* LoginViewController.m */; };
+		F724AE1019B6820800BDEB49 /* TabBarGeralController.m in Sources */ = {isa = PBXBuildFile; fileRef = F724AE0F19B6820800BDEB49 /* TabBarGeralController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,10 @@
 		F724AE0619B668B100BDEB49 /* webService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = webService.h; path = Classes/webService.h; sourceTree = "<group>"; };
 		F724AE0719B668B100BDEB49 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Classes/Reachability.h; sourceTree = "<group>"; };
 		F724AE0919B67F8B00BDEB49 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Classes/Reachability.m; sourceTree = "<group>"; };
+		F724AE0B19B6814B00BDEB49 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		F724AE0C19B6814B00BDEB49 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		F724AE0E19B6820800BDEB49 /* TabBarGeralController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarGeralController.h; sourceTree = "<group>"; };
+		F724AE0F19B6820800BDEB49 /* TabBarGeralController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarGeralController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,10 @@
 				BBC36BCA19B5F16B00D432CD /* WCIAppDelegate.h */,
 				BBC36BCB19B5F16B00D432CD /* WCIAppDelegate.m */,
 				BBC36BCD19B5F16B00D432CD /* Main_iPhone.storyboard */,
+				F724AE0E19B6820800BDEB49 /* TabBarGeralController.h */,
+				F724AE0F19B6820800BDEB49 /* TabBarGeralController.m */,
+				F724AE0B19B6814B00BDEB49 /* LoginViewController.h */,
+				F724AE0C19B6814B00BDEB49 /* LoginViewController.m */,
 				F724ADFA19B65DBF00BDEB49 /* BluetoothViewController.h */,
 				F724ADFB19B65DBF00BDEB49 /* BluetoothViewController.m */,
 				BBC36BD019B5F16B00D432CD /* Main_iPad.storyboard */,
@@ -297,10 +307,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F724AE0D19B6814B00BDEB49 /* LoginViewController.m in Sources */,
 				BBC36BCC19B5F16B00D432CD /* WCIAppDelegate.m in Sources */,
 				F724AE0219B6688100BDEB49 /* CNBluetoothCentral.m in Sources */,
 				F724ADFC19B65DBF00BDEB49 /* BluetoothViewController.m in Sources */,
 				F724AE0A19B67F8B00BDEB49 /* Reachability.m in Sources */,
+				F724AE1019B6820800BDEB49 /* TabBarGeralController.m in Sources */,
 				BBC36BC819B5F16B00D432CD /* main.m in Sources */,
 				F724AE0819B668B100BDEB49 /* webService.m in Sources */,
 				BBC36BD519B5F16B00D432CD /* WCIViewController.m in Sources */,

@@ -29,7 +29,7 @@
 +(BOOL)login : (NSString *)user : (NSString *)pass{
     if ([self check]){
         
-        NSString *url =  @"http://172.246.16.27/lixoPapao/loginManager.php";
+        NSString *url =  @"http://172.246.16.27/eze/loginManager.php";
         NSString *post = [NSString stringWithFormat:@"type=login&user=%@&pass=%@",user , pass];
         
         NSLog(@"%@" , post);
@@ -81,7 +81,7 @@
 +(int)newUser:(NSString *)user :(NSString *)pass :(NSString *)nickName{
     int x = 0;
     if ([self check]){
-        NSString *url =  @"http://172.246.16.27/lixoPapao/loginManager.php";
+        NSString *url =  @"http://172.246.16.27/eze/loginManager.php";
         NSString *post = [NSString stringWithFormat:@"type=new&user=%@&pass=%@&nick_name=%@",user , pass, nickName];
         
         //NSLog(@"%@" , post);
@@ -124,7 +124,7 @@
 +(void)uploadImage: (UIImage *)imagemDoPerfil : (NSString *)username{
     NSData *imageData = UIImagePNGRepresentation(imagemDoPerfil);
     
-    NSString *urlString = @"http://172.246.16.27/lixoPapao/imagem.php";
+    NSString *urlString = @"http://172.246.16.27/eze/imagem.php";
     NSString *filename = username;
     NSMutableURLRequest *request= [[NSMutableURLRequest alloc] init];
     [request setURL:[NSURL URLWithString:urlString]];
@@ -149,7 +149,7 @@
 
 +(NSDictionary *)carregarTinder : (NSString *)user{
     if ([self check]){
-        NSString *url =  @"http://172.246.16.27/lixoPapao/tinder.php";
+        NSString *url =  @"http://172.246.16.27/eze/tinder.php";
         NSString *post = [NSString stringWithFormat:@"type=first&user=%@",user];
         
         NSLog(@"%@" , post);
@@ -186,7 +186,7 @@
 
 +(BOOL)updateTinder : (int )evaluation : (int)idRecycled{
     if ([self check]){
-        NSString *url =  @"http://172.246.16.27/lixoPapao/tinder.php";
+        NSString *url =  @"http://172.246.16.27/eze/tinder.php";
         NSString *post = [NSString stringWithFormat:@"type=update&evaluation1=%d&id_recycled=%d",evaluation , idRecycled];
         
         NSLog(@"%@" , post);
@@ -232,7 +232,7 @@
 }
 
 +(NSDictionary *)rankingUser: (NSString *)type : (NSString *)user{
-    NSString *url =  @"http://172.246.16.27/lixoPapao/rank?";
+    NSString *url =  @"http://172.246.16.27/eze/rank?";
     NSString *post = [NSString stringWithFormat:@"type=%@&user=%@",type , user];
     
     NSLog(@"%@" , post);
@@ -258,7 +258,7 @@
 
 +(BOOL)salvaPontosJoguinho:(NSString *)user Papel:(NSString *)papel Vidro:(NSString *)vidro Plastico:(NSString *)plastico Metal:(NSString *)metal Pontuacao:(NSString *)total{
     if ([self check]){
-        NSString *url =  @"http://172.246.16.27/lixoPapao/rank.php";
+        NSString *url =  @"http://172.246.16.27/eze/rank.php";
         NSString *post = [NSString stringWithFormat:@"type=salvarjogolixo&user=%@&papel=%@&vidro=%@&plastico=%@&metal=%@&total=%@",user, papel, vidro, plastico, metal, total];
         
         NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
@@ -289,7 +289,7 @@
 
 +(BOOL)carregarPontosUsuario: (NSString *)user{
     if ([self check]){
-        NSString *url =  @"http://172.246.16.27/lixoPapao/rank.php";
+        NSString *url =  @"http://172.246.16.27/eze/rank.php";
         NSString *post = [NSString stringWithFormat:@"type=carregarjogolixo&user=%@", user];
         
         NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
