@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB84D95A19B739D100CD8F75 /* WCILeitorQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB84D95919B739D100CD8F75 /* WCILeitorQRViewController.m */; };
 		BBC36BBC19B5F16B00D432CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC36BBB19B5F16B00D432CD /* Foundation.framework */; };
 		BBC36BBE19B5F16B00D432CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC36BBD19B5F16B00D432CD /* CoreGraphics.framework */; };
 		BBC36BC019B5F16B00D432CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC36BBF19B5F16B00D432CD /* UIKit.framework */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB84D95819B739D100CD8F75 /* WCILeitorQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCILeitorQRViewController.h; sourceTree = "<group>"; };
+		BB84D95919B739D100CD8F75 /* WCILeitorQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCILeitorQRViewController.m; sourceTree = "<group>"; };
 		BBC36BB819B5F16B00D432CD /* GameficationSenac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameficationSenac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC36BBB19B5F16B00D432CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BBC36BBD19B5F16B00D432CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -142,6 +145,8 @@
 				BBC36BCA19B5F16B00D432CD /* WCIAppDelegate.h */,
 				BBC36BCB19B5F16B00D432CD /* WCIAppDelegate.m */,
 				BBC36BCD19B5F16B00D432CD /* Main_iPhone.storyboard */,
+				BB84D95819B739D100CD8F75 /* WCILeitorQRViewController.h */,
+				BB84D95919B739D100CD8F75 /* WCILeitorQRViewController.m */,
 				F724AE0E19B6820800BDEB49 /* TabBarGeralController.h */,
 				F724AE0F19B6820800BDEB49 /* TabBarGeralController.m */,
 				F724AE1119B68FD500BDEB49 /* MissoesViewController.h */,
@@ -260,6 +265,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Danilo Makoto Ikuta";
 				TargetAttributes = {
+					BBC36BB719B5F16B00D432CD = {
+						DevelopmentTeam = WQ48928X86;
+					};
 					BBC36BDB19B5F16B00D432CD = {
 						TestTargetID = BBC36BB719B5F16B00D432CD;
 					};
@@ -317,6 +325,7 @@
 				F724AE1319B68FD500BDEB49 /* MissoesViewController.m in Sources */,
 				F724AE0219B6688100BDEB49 /* CNBluetoothCentral.m in Sources */,
 				F724ADFC19B65DBF00BDEB49 /* BluetoothViewController.m in Sources */,
+				BB84D95A19B739D100CD8F75 /* WCILeitorQRViewController.m in Sources */,
 				F724AE0A19B67F8B00BDEB49 /* Reachability.m in Sources */,
 				F724AE1019B6820800BDEB49 /* TabBarGeralController.m in Sources */,
 				BBC36BC819B5F16B00D432CD /* main.m in Sources */,
@@ -456,10 +465,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GameficationSenac/GameficationSenac-Prefix.pch";
 				INFOPLIST_FILE = "GameficationSenac/GameficationSenac-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -469,10 +481,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GameficationSenac/GameficationSenac-Prefix.pch";
 				INFOPLIST_FILE = "GameficationSenac/GameficationSenac-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
