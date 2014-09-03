@@ -1,18 +1,18 @@
 //
-//  LoginViewController.m
+//  MissoesViewController.m
 //  GameficationSenac
 //
 //  Created by Ezequiel Franca dos Santos on 02/09/14.
 //  Copyright (c) 2014 Danilo Makoto Ikuta. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "MissoesViewController.h"
 
-@interface LoginViewController ()
+@interface MissoesViewController ()
 
 @end
 
-@implementation LoginViewController
+@implementation MissoesViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,11 +46,4 @@
 }
 */
 
-- (IBAction)botaoLogin:(id)sender {
-    
-    //Se logar (colocar a verificacao)
-    NSLog(@"Login");
-    MissoesViewController *missoesView = [self.storyboard instantiateViewControllerWithIdentifier:@"missoes"];
-    [self presentViewController:missoesView animated:YES completion:nil];
-}
 @end

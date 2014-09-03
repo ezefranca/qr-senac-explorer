@@ -29,6 +29,7 @@
 		F724AE0A19B67F8B00BDEB49 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F724AE0919B67F8B00BDEB49 /* Reachability.m */; };
 		F724AE0D19B6814B00BDEB49 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F724AE0C19B6814B00BDEB49 /* LoginViewController.m */; };
 		F724AE1019B6820800BDEB49 /* TabBarGeralController.m in Sources */ = {isa = PBXBuildFile; fileRef = F724AE0F19B6820800BDEB49 /* TabBarGeralController.m */; };
+		F724AE1319B68FD500BDEB49 /* MissoesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F724AE1219B68FD500BDEB49 /* MissoesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		F724AE0C19B6814B00BDEB49 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		F724AE0E19B6820800BDEB49 /* TabBarGeralController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarGeralController.h; sourceTree = "<group>"; };
 		F724AE0F19B6820800BDEB49 /* TabBarGeralController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarGeralController.m; sourceTree = "<group>"; };
+		F724AE1119B68FD500BDEB49 /* MissoesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissoesViewController.h; sourceTree = "<group>"; };
+		F724AE1219B68FD500BDEB49 /* MissoesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissoesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,8 @@
 				F724AE0E19B6820800BDEB49 /* TabBarGeralController.h */,
 				F724AE0F19B6820800BDEB49 /* TabBarGeralController.m */,
 				F724AE0B19B6814B00BDEB49 /* LoginViewController.h */,
+				F724AE1119B68FD500BDEB49 /* MissoesViewController.h */,
+				F724AE1219B68FD500BDEB49 /* MissoesViewController.m */,
 				F724AE0C19B6814B00BDEB49 /* LoginViewController.m */,
 				F724ADFA19B65DBF00BDEB49 /* BluetoothViewController.h */,
 				F724ADFB19B65DBF00BDEB49 /* BluetoothViewController.m */,
@@ -309,6 +314,7 @@
 			files = (
 				F724AE0D19B6814B00BDEB49 /* LoginViewController.m in Sources */,
 				BBC36BCC19B5F16B00D432CD /* WCIAppDelegate.m in Sources */,
+				F724AE1319B68FD500BDEB49 /* MissoesViewController.m in Sources */,
 				F724AE0219B6688100BDEB49 /* CNBluetoothCentral.m in Sources */,
 				F724ADFC19B65DBF00BDEB49 /* BluetoothViewController.m in Sources */,
 				F724AE0A19B67F8B00BDEB49 /* Reachability.m in Sources */,

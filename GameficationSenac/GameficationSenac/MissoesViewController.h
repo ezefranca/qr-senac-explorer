@@ -1,5 +1,5 @@
 //
-//  TabBarGeralController.h
+//  MissoesViewController.h
 //  GameficationSenac
 //
 //  Created by Ezequiel Franca dos Santos on 02/09/14.
@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LoginViewController.h"
-#import "MissoesViewController.h"
 
-@interface TabBarGeralController : UITabBarController
+@interface MissoesViewController : UIViewController
 
 @end

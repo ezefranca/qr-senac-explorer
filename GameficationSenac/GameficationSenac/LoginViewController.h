@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MissoesViewController.h"
 
 @interface LoginViewController : UIViewController
+
+- (IBAction)botaoLogin:(id)sender;
 
 @end
