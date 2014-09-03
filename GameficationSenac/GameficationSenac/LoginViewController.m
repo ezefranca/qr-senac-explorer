@@ -50,7 +50,9 @@
     
     //Se logar (colocar a verificacao)
     NSLog(@"Login");
-    MissoesViewController *missoesView = [self.storyboard instantiateViewControllerWithIdentifier:@"missoes"];
-    [self presentViewController:missoesView animated:YES completion:nil];
+    //MissoesViewController *missoesView = [self.storyboard instantiateViewControllerWithIdentifier:@"missoes"];
+    //[self presentViewController:missoesView animated:YES completion:nil];
+    
+    [self performSegueWithIdentifier:@"Login" sender:self];
 }
 @end

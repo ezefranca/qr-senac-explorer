@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>A408E8D0-11FF-4CEF-AF0B-AADB5DD4D22E</string>
+	<string>2CD8F3F1-D48E-4F8F-999D-E6DDFD0180B2</string>
 	<key>IDESourceControlProjectName</key>
 	<string>GameficationSenac</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>413753A3-1D1D-408F-921C-B89B64C11D59</key>
-		<string>https://github.com/ezefranca/qr-senac-explorer.git</string>
+		<key>34FC7D73-CC1F-4F3D-A301-9B6848C4AF9E</key>
+		<string>https://github.com/ezefranca/qr-senac-explorer</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>GameficationSenac/GameficationSenac.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>413753A3-1D1D-408F-921C-B89B64C11D59</key>
+		<key>34FC7D73-CC1F-4F3D-A301-9B6848C4AF9E</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/ezefranca/qr-senac-explorer.git</string>
+	<string>https://github.com/ezefranca/qr-senac-explorer</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>413753A3-1D1D-408F-921C-B89B64C11D59</string>
+	<string>34FC7D73-CC1F-4F3D-A301-9B6848C4AF9E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>413753A3-1D1D-408F-921C-B89B64C11D59</string>
+			<string>34FC7D73-CC1F-4F3D-A301-9B6848C4AF9E</string>
 			<key>IDESourceControlWCCName</key>
 			<string>qr-senac-explorer</string>
 		</dict>
