@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "LoginViewController.h"
-#import "MissoesViewController.h"
 
 @interface TabBarGeralController : UITabBarController
 

@@ -30,7 +30,9 @@
 		F724AE0A19B67F8B00BDEB49 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F724AE0919B67F8B00BDEB49 /* Reachability.m */; };
 		F724AE0D19B6814B00BDEB49 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F724AE0C19B6814B00BDEB49 /* LoginViewController.m */; };
 		F724AE1019B6820800BDEB49 /* TabBarGeralController.m in Sources */ = {isa = PBXBuildFile; fileRef = F724AE0F19B6820800BDEB49 /* TabBarGeralController.m */; };
-		F724AE1319B68FD500BDEB49 /* MissoesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F724AE1219B68FD500BDEB49 /* MissoesViewController.m */; };
+		F7D6951219B81352003F4BA9 /* WCIPerfilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D6951119B81352003F4BA9 /* WCIPerfilViewController.m */; };
+		F7D6951819B814B8003F4BA9 /* WCIMissionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D6951719B814B8003F4BA9 /* WCIMissionDetailViewController.m */; };
+		F7D6951B19B8157C003F4BA9 /* MissionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D6951A19B8157C003F4BA9 /* MissionTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,8 +82,12 @@
 		F724AE0C19B6814B00BDEB49 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		F724AE0E19B6820800BDEB49 /* TabBarGeralController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarGeralController.h; sourceTree = "<group>"; };
 		F724AE0F19B6820800BDEB49 /* TabBarGeralController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarGeralController.m; sourceTree = "<group>"; };
-		F724AE1119B68FD500BDEB49 /* MissoesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissoesViewController.h; sourceTree = "<group>"; };
-		F724AE1219B68FD500BDEB49 /* MissoesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissoesViewController.m; sourceTree = "<group>"; };
+		F7D6951019B81352003F4BA9 /* WCIPerfilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCIPerfilViewController.h; sourceTree = "<group>"; };
+		F7D6951119B81352003F4BA9 /* WCIPerfilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCIPerfilViewController.m; sourceTree = "<group>"; };
+		F7D6951619B814B8003F4BA9 /* WCIMissionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCIMissionDetailViewController.h; sourceTree = "<group>"; };
+		F7D6951719B814B8003F4BA9 /* WCIMissionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCIMissionDetailViewController.m; sourceTree = "<group>"; };
+		F7D6951919B8157C003F4BA9 /* MissionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissionTableViewController.h; sourceTree = "<group>"; };
+		F7D6951A19B8157C003F4BA9 /* MissionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissionTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +147,10 @@
 		BBC36BC119B5F16B00D432CD /* GameficationSenac */ = {
 			isa = PBXGroup;
 			children = (
-				F724AE0419B6689E00BDEB49 /* Classes */,
+				F7D6951919B8157C003F4BA9 /* MissionTableViewController.h */,
+				F7D6951A19B8157C003F4BA9 /* MissionTableViewController.m */,
+				F7D6951619B814B8003F4BA9 /* WCIMissionDetailViewController.h */,
+				F7D6951719B814B8003F4BA9 /* WCIMissionDetailViewController.m */,
 				BBC36BCA19B5F16B00D432CD /* WCIAppDelegate.h */,
 				BBC36BCB19B5F16B00D432CD /* WCIAppDelegate.m */,
 				BBC36BCD19B5F16B00D432CD /* Main_iPhone.storyboard */,
@@ -149,15 +158,16 @@
 				BB84D95919B739D100CD8F75 /* WCILeitorQRViewController.m */,
 				F724AE0E19B6820800BDEB49 /* TabBarGeralController.h */,
 				F724AE0F19B6820800BDEB49 /* TabBarGeralController.m */,
-				F724AE1119B68FD500BDEB49 /* MissoesViewController.h */,
-				F724AE1219B68FD500BDEB49 /* MissoesViewController.m */,
 				F724AE0B19B6814B00BDEB49 /* LoginViewController.h */,
 				F724AE0C19B6814B00BDEB49 /* LoginViewController.m */,
+				F7D6951019B81352003F4BA9 /* WCIPerfilViewController.h */,
+				F7D6951119B81352003F4BA9 /* WCIPerfilViewController.m */,
 				F724ADFA19B65DBF00BDEB49 /* BluetoothViewController.h */,
 				F724ADFB19B65DBF00BDEB49 /* BluetoothViewController.m */,
 				BBC36BD019B5F16B00D432CD /* Main_iPad.storyboard */,
 				BBC36BD319B5F16B00D432CD /* WCIViewController.h */,
 				BBC36BD419B5F16B00D432CD /* WCIViewController.m */,
+				F724AE0419B6689E00BDEB49 /* Classes */,
 				BBC36BD619B5F16B00D432CD /* Images.xcassets */,
 				BBC36BC219B5F16B00D432CD /* Supporting Files */,
 			);
@@ -321,9 +331,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F724AE0D19B6814B00BDEB49 /* LoginViewController.m in Sources */,
+				F7D6951819B814B8003F4BA9 /* WCIMissionDetailViewController.m in Sources */,
 				BBC36BCC19B5F16B00D432CD /* WCIAppDelegate.m in Sources */,
-				F724AE1319B68FD500BDEB49 /* MissoesViewController.m in Sources */,
 				F724AE0219B6688100BDEB49 /* CNBluetoothCentral.m in Sources */,
+				F7D6951B19B8157C003F4BA9 /* MissionTableViewController.m in Sources */,
+				F7D6951219B81352003F4BA9 /* WCIPerfilViewController.m in Sources */,
 				F724ADFC19B65DBF00BDEB49 /* BluetoothViewController.m in Sources */,
 				BB84D95A19B739D100CD8F75 /* WCILeitorQRViewController.m in Sources */,
 				F724AE0A19B67F8B00BDEB49 /* Reachability.m in Sources */,

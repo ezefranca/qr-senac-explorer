@@ -1,18 +1,18 @@
 //
-//  MissoesViewController.m
+//  WCIPerfilViewController.m
 //  GameficationSenac
 //
-//  Created by Ezequiel Franca dos Santos on 02/09/14.
+//  Created by Ezequiel Franca dos Santos on 04/09/14.
 //  Copyright (c) 2014 Danilo Makoto Ikuta. All rights reserved.
 //
 
-#import "MissoesViewController.h"
+#import "WCIPerfilViewController.h"
 
-@interface MissoesViewController ()
+@interface WCIPerfilViewController ()
 
 @end
 
-@implementation MissoesViewController
+@implementation WCIPerfilViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
