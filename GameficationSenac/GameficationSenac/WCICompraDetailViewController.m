@@ -1,18 +1,18 @@
 //
-//  WCIMissionDetailViewController.m
+//  WCICompraDetailViewController.m
 //  GameficationSenac
 //
-//  Created by Ezequiel Franca dos Santos on 04/09/14.
+//  Created by Danilo Makoto Ikuta on 04/09/14.
 //  Copyright (c) 2014 Danilo Makoto Ikuta. All rights reserved.
 //
 
-#import "WCIMissionDetailViewController.h"
+#import "WCICompraDetailViewController.h"
 
-@interface WCIMissionDetailViewController ()
+@interface WCICompraDetailViewController ()
 
 @end
 
-@implementation WCIMissionDetailViewController
+@implementation WCICompraDetailViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,7 +26,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"MIssão: %d", self.missionNumber);
     // Do any additional setup after loading the view.
 }
 
@@ -50,5 +49,14 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"toUsarIntervencao"]){
+        BluetoothViewController *vc = segue.destinationViewController;
+        vc.numberIntervencao = self.compraNumber;
+    }
+}
+
 
 @end

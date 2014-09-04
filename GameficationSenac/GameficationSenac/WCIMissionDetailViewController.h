@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface WCIMissionDetailViewController : UIViewController
+
+@property (nonatomic) NSInteger missionNumber;
 @property (strong, nonatomic) NSArray *missionDetailModel;
+
+
 @end

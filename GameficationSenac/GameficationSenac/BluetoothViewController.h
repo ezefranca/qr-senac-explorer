@@ -16,6 +16,7 @@
 @interface BluetoothViewController : UIViewController <CNBluetoothCentralDelegate>
 
 @property BOOL conectado;
+@property (nonatomic) NSInteger numberIntervencao;
 
 - (IBAction)botaoConectar:(id)sender;
 - (IBAction)botaoEnviar:(id)sender;

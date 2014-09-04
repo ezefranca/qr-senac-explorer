@@ -32,6 +32,7 @@
     [super viewDidLoad];
     
     self.estaScaneando = NO;
+    [self comecaTerminaScan:nil];
     
     self.captureSession = nil;
 }

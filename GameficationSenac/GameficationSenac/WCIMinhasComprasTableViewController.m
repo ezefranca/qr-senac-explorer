@@ -1,20 +1,20 @@
 //
-//  MissionTableViewController.m
+//  WCIMinhasComprasTableViewController.m
 //  GameficationSenac
 //
-//  Created by Ezequiel Franca dos Santos on 04/09/14.
+//  Created by Danilo Makoto Ikuta on 04/09/14.
 //  Copyright (c) 2014 Danilo Makoto Ikuta. All rights reserved.
 //
 
-#import "MissionTableViewController.h"
+#import "WCIMinhasComprasTableViewController.h"
 
-@interface MissionTableViewController ()
+@interface WCIMinhasComprasTableViewController (){
+    NSArray *minhasCompras;
+}
 
 @end
 
-@implementation MissionTableViewController{
-    NSArray *detalhesMissao;
-}
+@implementation WCIMinhasComprasTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -29,8 +29,7 @@
 {
     [super viewDidLoad];
     
-    detalhesMissao = [NSArray arrayWithObjects:@"Missao 1", @"Missao 2", @"Missao 3", @"Missao 4", @"Missao 5", @"Missao 6", @"Missao 7", @"Missao 8", @"Missao 9", @"Missao 10", nil];
-
+    minhasCompras = [NSArray arrayWithObjects:@"minhaCompra1", @"minhaCompra2", @"minhaCompra3", nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -45,6 +44,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)unwindSegue:(UIStoryboardSegue *)segue{
+    
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -56,46 +59,28 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [detalhesMissao count];
+    return [minhasCompras count];
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"clicou");
+    
+    [self performSegueWithIdentifier:@"toUsarIntervencao" sender:self];
+}
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *TableIdentifier = @"MissionTableView";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"minhasComprasCell" forIndexPath:indexPath];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TableIdentifier];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:TableIdentifier];
-        cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+    if(cell == nil){
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"minhasComprasCell"];
     }
     
-    cell.textLabel.text = [detalhesMissao objectAtIndex:indexPath.row];
-    //Badge da Missao
-    //cell.imageView.image = [UIImage imageNamed:@"missao.png"];
+    // Configure the cell...
+    cell.textLabel.text = [minhasCompras objectAtIndex:indexPath.row];
+    
     return cell;
-}
-
--(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSLog(@"clicou");
-    
-    [self performSegueWithIdentifier:@"toMissionDetail" sender:self];
-}
-
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"toMissionDetail"]){
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        
-        WCIMissionDetailViewController *vc = segue.destinationViewController;
-        vc.missionNumber = indexPath.row + 1;
-    }
-
-}
-
-- (IBAction)unwindSegue:(UIStoryboardSegue *)segue{
-    
 }
 
 /*
@@ -136,15 +121,18 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if([segue.identifier isEqualToString:@"toUsarIntervencao"]){
+        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+        
+        BluetoothViewController *vc = segue.destinationViewController;
+        vc.numberIntervencao = path.row + 1;
+    }
 }
-*/
 
 @end

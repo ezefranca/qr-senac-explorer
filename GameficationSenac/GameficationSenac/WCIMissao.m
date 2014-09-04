@@ -10,4 +10,14 @@
 
 @implementation WCIMissao
 
+- (id)init{
+    self = [super init];
+    
+    if(self){
+        self.isComplete = NO;
+    }
+    
+    return self;
+}
+
 @end

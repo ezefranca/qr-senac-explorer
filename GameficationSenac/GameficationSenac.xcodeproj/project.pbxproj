@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		BB84D95A19B739D100CD8F75 /* WCILeitorQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB84D95919B739D100CD8F75 /* WCILeitorQRViewController.m */; };
+		BB94267719B8A82A005BF86A /* WCIMinhasComprasTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB94267619B8A82A005BF86A /* WCIMinhasComprasTableViewController.m */; };
+		BB94267A19B8AC22005BF86A /* WCIRankingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB94267919B8AC22005BF86A /* WCIRankingTableViewController.m */; };
+		BBA3050519B89FCF00CFEAC8 /* WCIMissao.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA3050419B89FCF00CFEAC8 /* WCIMissao.m */; };
+		BBA3051119B8A4C100CFEAC8 /* WCIComprasTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA3051019B8A4C100CFEAC8 /* WCIComprasTableViewController.m */; };
+		BBA3051419B8A54100CFEAC8 /* WCICompraDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA3051319B8A54100CFEAC8 /* WCICompraDetailViewController.m */; };
 		BBC36BBC19B5F16B00D432CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC36BBB19B5F16B00D432CD /* Foundation.framework */; };
 		BBC36BBE19B5F16B00D432CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC36BBD19B5F16B00D432CD /* CoreGraphics.framework */; };
 		BBC36BC019B5F16B00D432CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC36BBF19B5F16B00D432CD /* UIKit.framework */; };
@@ -49,6 +54,16 @@
 /* Begin PBXFileReference section */
 		BB84D95819B739D100CD8F75 /* WCILeitorQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCILeitorQRViewController.h; sourceTree = "<group>"; };
 		BB84D95919B739D100CD8F75 /* WCILeitorQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCILeitorQRViewController.m; sourceTree = "<group>"; };
+		BB94267519B8A82A005BF86A /* WCIMinhasComprasTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCIMinhasComprasTableViewController.h; sourceTree = "<group>"; };
+		BB94267619B8A82A005BF86A /* WCIMinhasComprasTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCIMinhasComprasTableViewController.m; sourceTree = "<group>"; };
+		BB94267819B8AC22005BF86A /* WCIRankingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCIRankingTableViewController.h; sourceTree = "<group>"; };
+		BB94267919B8AC22005BF86A /* WCIRankingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCIRankingTableViewController.m; sourceTree = "<group>"; };
+		BBA3050319B89FCF00CFEAC8 /* WCIMissao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCIMissao.h; sourceTree = "<group>"; };
+		BBA3050419B89FCF00CFEAC8 /* WCIMissao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCIMissao.m; sourceTree = "<group>"; };
+		BBA3050F19B8A4C100CFEAC8 /* WCIComprasTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCIComprasTableViewController.h; sourceTree = "<group>"; };
+		BBA3051019B8A4C100CFEAC8 /* WCIComprasTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCIComprasTableViewController.m; sourceTree = "<group>"; };
+		BBA3051219B8A54100CFEAC8 /* WCICompraDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCICompraDetailViewController.h; sourceTree = "<group>"; };
+		BBA3051319B8A54100CFEAC8 /* WCICompraDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCICompraDetailViewController.m; sourceTree = "<group>"; };
 		BBC36BB819B5F16B00D432CD /* GameficationSenac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameficationSenac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC36BBB19B5F16B00D432CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BBC36BBD19B5F16B00D432CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -157,6 +172,16 @@
 				BBC36BCA19B5F16B00D432CD /* WCIAppDelegate.h */,
 				BBC36BCB19B5F16B00D432CD /* WCIAppDelegate.m */,
 				BBC36BCD19B5F16B00D432CD /* Main_iPhone.storyboard */,
+				BB94267819B8AC22005BF86A /* WCIRankingTableViewController.h */,
+				BB94267919B8AC22005BF86A /* WCIRankingTableViewController.m */,
+				BB94267519B8A82A005BF86A /* WCIMinhasComprasTableViewController.h */,
+				BB94267619B8A82A005BF86A /* WCIMinhasComprasTableViewController.m */,
+				BBA3051219B8A54100CFEAC8 /* WCICompraDetailViewController.h */,
+				BBA3051319B8A54100CFEAC8 /* WCICompraDetailViewController.m */,
+				BBA3050F19B8A4C100CFEAC8 /* WCIComprasTableViewController.h */,
+				BBA3051019B8A4C100CFEAC8 /* WCIComprasTableViewController.m */,
+				BBA3050319B89FCF00CFEAC8 /* WCIMissao.h */,
+				BBA3050419B89FCF00CFEAC8 /* WCIMissao.m */,
 				BB84D95819B739D100CD8F75 /* WCILeitorQRViewController.h */,
 				BB84D95919B739D100CD8F75 /* WCILeitorQRViewController.m */,
 				F724AE0E19B6820800BDEB49 /* TabBarGeralController.h */,
@@ -348,10 +373,15 @@
 				F724AE0219B6688100BDEB49 /* CNBluetoothCentral.m in Sources */,
 				F7D6951B19B8157C003F4BA9 /* MissionTableViewController.m in Sources */,
 				F7D6951219B81352003F4BA9 /* WCIPerfilViewController.m in Sources */,
+				BBA3051419B8A54100CFEAC8 /* WCICompraDetailViewController.m in Sources */,
 				F724ADFC19B65DBF00BDEB49 /* BluetoothViewController.m in Sources */,
 				BB84D95A19B739D100CD8F75 /* WCILeitorQRViewController.m in Sources */,
+				BBA3051119B8A4C100CFEAC8 /* WCIComprasTableViewController.m in Sources */,
 				F724AE0A19B67F8B00BDEB49 /* Reachability.m in Sources */,
+				BBA3050519B89FCF00CFEAC8 /* WCIMissao.m in Sources */,
+				BB94267719B8A82A005BF86A /* WCIMinhasComprasTableViewController.m in Sources */,
 				F724AE1019B6820800BDEB49 /* TabBarGeralController.m in Sources */,
+				BB94267A19B8AC22005BF86A /* WCIRankingTableViewController.m in Sources */,
 				BBC36BC819B5F16B00D432CD /* main.m in Sources */,
 				F724AE0819B668B100BDEB49 /* webService.m in Sources */,
 				BBC36BD519B5F16B00D432CD /* WCIViewController.m in Sources */,

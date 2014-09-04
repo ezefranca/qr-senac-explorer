@@ -1,20 +1,20 @@
 //
-//  MissionTableViewController.m
+//  WCIRankingTableViewController.m
 //  GameficationSenac
 //
-//  Created by Ezequiel Franca dos Santos on 04/09/14.
+//  Created by Danilo Makoto Ikuta on 04/09/14.
 //  Copyright (c) 2014 Danilo Makoto Ikuta. All rights reserved.
 //
 
-#import "MissionTableViewController.h"
+#import "WCIRankingTableViewController.h"
 
-@interface MissionTableViewController ()
+@interface WCIRankingTableViewController (){
+    NSArray *ranking;
+}
 
 @end
 
-@implementation MissionTableViewController{
-    NSArray *detalhesMissao;
-}
+@implementation WCIRankingTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -29,8 +29,7 @@
 {
     [super viewDidLoad];
     
-    detalhesMissao = [NSArray arrayWithObjects:@"Missao 1", @"Missao 2", @"Missao 3", @"Missao 4", @"Missao 5", @"Missao 6", @"Missao 7", @"Missao 8", @"Missao 9", @"Missao 10", nil];
-
+    ranking = [NSArray arrayWithObjects:@"jogador 1", @"jogador 2", @"você", @"perdeu", @"o", @"jogo", nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -56,46 +55,21 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [detalhesMissao count];
+    return [ranking count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *TableIdentifier = @"MissionTableView";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"rankingCell"];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:TableIdentifier];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:TableIdentifier];
-        cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+    // Configure the cell...
+    if(cell == nil){
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"rankingCell"];
     }
     
-    cell.textLabel.text = [detalhesMissao objectAtIndex:indexPath.row];
-    //Badge da Missao
-    //cell.imageView.image = [UIImage imageNamed:@"missao.png"];
+    cell.textLabel.text = [ranking objectAtIndex:indexPath.row];
+    
     return cell;
-}
-
--(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSLog(@"clicou");
-    
-    [self performSegueWithIdentifier:@"toMissionDetail" sender:self];
-}
-
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"toMissionDetail"]){
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        
-        WCIMissionDetailViewController *vc = segue.destinationViewController;
-        vc.missionNumber = indexPath.row + 1;
-    }
-
-}
-
-- (IBAction)unwindSegue:(UIStoryboardSegue *)segue{
-    
 }
 
 /*

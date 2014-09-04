@@ -10,4 +10,8 @@
 
 @interface WCIMissao : NSObject
 
+@property (nonatomic) NSInteger missionNumber;
+@property (nonatomic, strong) NSString *missionName;
+@property (nonatomic) BOOL isComplete;
+
 @end
