@@ -67,6 +67,7 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"rankingCell"];
     }
     
+    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:20];
     cell.textLabel.text = [ranking objectAtIndex:indexPath.row];
     
     return cell;

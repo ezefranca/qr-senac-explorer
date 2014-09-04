@@ -70,6 +70,7 @@
         cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     }
     
+    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:20];
     cell.textLabel.text = [detalhesMissao objectAtIndex:indexPath.row];
     //Badge da Missao
     //cell.imageView.image = [UIImage imageNamed:@"missao.png"];

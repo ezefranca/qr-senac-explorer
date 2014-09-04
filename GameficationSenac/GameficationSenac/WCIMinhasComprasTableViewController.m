@@ -78,6 +78,7 @@
     }
     
     // Configure the cell...
+    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:20];
     cell.textLabel.text = [minhasCompras objectAtIndex:indexPath.row];
     
     return cell;

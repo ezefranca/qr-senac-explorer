@@ -141,7 +141,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QdM-fs-HNk">
                                 <rect key="frame" x="118" y="479" width="85" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Scan!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -193,9 +193,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YI7-cd-RGX">
-                                <rect key="frame" x="107" y="524" width="107" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YI7-cd-RGX">
+                                <rect key="frame" x="83" y="524" width="155" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Scan QR Code!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -215,7 +216,7 @@
                             <constraint firstItem="YI7-cd-RGX" firstAttribute="top" secondItem="Bh1-2N-Fge" secondAttribute="bottom" constant="8" id="FBP-Po-z8a"/>
                             <constraint firstItem="Bh1-2N-Fge" firstAttribute="top" secondItem="x36-ve-ShQ" secondAttribute="bottom" constant="2" id="Nq4-Ze-QVf"/>
                             <constraint firstItem="Bh1-2N-Fge" firstAttribute="centerX" secondItem="jN1-TH-mst" secondAttribute="centerX" id="Xzf-hf-pyk"/>
-                            <constraint firstItem="Bh1-2N-Fge" firstAttribute="trailing" secondItem="YI7-cd-RGX" secondAttribute="trailing" constant="72" id="fJ8-ow-5ub"/>
+                            <constraint firstItem="Bh1-2N-Fge" firstAttribute="trailing" secondItem="YI7-cd-RGX" secondAttribute="trailing" constant="48" id="fJ8-ow-5ub"/>
                             <constraint firstItem="Bh1-2N-Fge" firstAttribute="leading" secondItem="jN1-TH-mst" secondAttribute="leading" constant="34" id="uN5-b7-jzN"/>
                         </constraints>
                     </view>
@@ -318,7 +319,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2W-Cz-e84">
                                 <rect key="frame" x="98" y="487" width="125" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Comprar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -395,7 +396,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Usar Intervenção" id="55b-le-mNX">
-                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="AQW-hl-wRB">
+                        <barButtonItem key="leftBarButtonItem" title="Volta" id="AQW-hl-wRB">
                             <connections>
                                 <segue destination="3ir-nk-fOY" kind="unwind" unwindAction="unwindSegue:" id="kSb-Jb-zRS"/>
                             </connections>
@@ -440,7 +441,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2NO-6X-JId" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="78" y="1075"/>
+            <point key="canvasLocation" x="78" y="712"/>
         </scene>
         <!--Navigation Controller - Ranking-->
         <scene sceneID="WFV-jg-8Ol">
@@ -487,6 +488,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="jyP-FA-Djl"/>
+        <segue reference="6bF-ns-RnA"/>
     </inferredMetricsTieBreakers>
 </document>

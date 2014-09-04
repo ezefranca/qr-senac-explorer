@@ -72,6 +72,7 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"compraCell"];
     }
     
+    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:20];
     cell.textLabel.text = [compras objectAtIndex:indexPath.row];
     
     return cell;
