@@ -73,7 +73,10 @@
  */
 
 - (IBAction)botaoLogin:(id)sender {
-    [self Login];
+  //  [self Login];
+    
+    NSLog(@"Logado");
+    [self performSegueWithIdentifier:@"Logado" sender:self];
 }
 
 - (BOOL)Login{

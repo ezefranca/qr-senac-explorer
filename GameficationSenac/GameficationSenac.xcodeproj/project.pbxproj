@@ -45,6 +45,18 @@
 		F7D00DD719B9198F0012A293 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D00DD519B9198F0012A293 /* background.png */; };
 		F7D00DDA19B91AF80012A293 /* WCITelaCadastroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D00DD919B91AF80012A293 /* WCITelaCadastroViewController.m */; };
 		F7D00DDD19B925A20012A293 /* WCITelaLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D00DDC19B925A20012A293 /* WCITelaLoginViewController.m */; };
+		F7D00DEA19B9816B0012A293 /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D00DDE19B9816B0012A293 /* background2.png */; };
+		F7D00DEB19B9816B0012A293 /* btn-comprar.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D00DDF19B9816B0012A293 /* btn-comprar.png */; };
+		F7D00DEC19B9816B0012A293 /* btn-enviar.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D00DE019B9816B0012A293 /* btn-enviar.png */; };
+		F7D00DED19B9816B0012A293 /* btn-lerqrcode.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D00DE119B9816B0012A293 /* btn-lerqrcode.png */; };
+		F7D00DEE19B9816B0012A293 /* interven-iconTab.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D00DE219B9816B0012A293 /* interven-iconTab.png */; };
+		F7D00DEF19B9816B0012A293 /* missao-iconTab.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D00DE319B9816B0012A293 /* missao-iconTab.png */; };
+		F7D00DF019B9816B0012A293 /* moeda.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D00DE419B9816B0012A293 /* moeda.png */; };
+		F7D00DF119B9816B0012A293 /* perfil-iconTab.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D00DE519B9816B0012A293 /* perfil-iconTab.png */; };
+		F7D00DF219B9816B0012A293 /* perfil-iconTab(2).png in Resources */ = {isa = PBXBuildFile; fileRef = F7D00DE619B9816B0012A293 /* perfil-iconTab(2).png */; };
+		F7D00DF319B9816B0012A293 /* ranking-iconTab.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D00DE719B9816B0012A293 /* ranking-iconTab.png */; };
+		F7D00DF419B9816B0012A293 /* section-perfil.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D00DE819B9816B0012A293 /* section-perfil.png */; };
+		F7D00DF519B9816B0012A293 /* trofeu.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D00DE919B9816B0012A293 /* trofeu.png */; };
 		F7D6951219B81352003F4BA9 /* WCIPerfilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D6951119B81352003F4BA9 /* WCIPerfilViewController.m */; };
 		F7D6951819B814B8003F4BA9 /* WCIMissionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D6951719B814B8003F4BA9 /* WCIMissionDetailViewController.m */; };
 		F7D6951B19B8157C003F4BA9 /* MissionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D6951A19B8157C003F4BA9 /* MissionTableViewController.m */; };
@@ -119,6 +131,18 @@
 		F7D00DD919B91AF80012A293 /* WCITelaCadastroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCITelaCadastroViewController.m; path = GameficationSenac/WCITelaCadastroViewController.m; sourceTree = SOURCE_ROOT; };
 		F7D00DDB19B925A20012A293 /* WCITelaLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCITelaLoginViewController.h; sourceTree = "<group>"; };
 		F7D00DDC19B925A20012A293 /* WCITelaLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCITelaLoginViewController.m; sourceTree = "<group>"; };
+		F7D00DDE19B9816B0012A293 /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
+		F7D00DDF19B9816B0012A293 /* btn-comprar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-comprar.png"; sourceTree = "<group>"; };
+		F7D00DE019B9816B0012A293 /* btn-enviar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-enviar.png"; sourceTree = "<group>"; };
+		F7D00DE119B9816B0012A293 /* btn-lerqrcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-lerqrcode.png"; sourceTree = "<group>"; };
+		F7D00DE219B9816B0012A293 /* interven-iconTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "interven-iconTab.png"; sourceTree = "<group>"; };
+		F7D00DE319B9816B0012A293 /* missao-iconTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "missao-iconTab.png"; sourceTree = "<group>"; };
+		F7D00DE419B9816B0012A293 /* moeda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moeda.png; sourceTree = "<group>"; };
+		F7D00DE519B9816B0012A293 /* perfil-iconTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "perfil-iconTab.png"; sourceTree = "<group>"; };
+		F7D00DE619B9816B0012A293 /* perfil-iconTab(2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "perfil-iconTab(2).png"; sourceTree = "<group>"; };
+		F7D00DE719B9816B0012A293 /* ranking-iconTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ranking-iconTab.png"; sourceTree = "<group>"; };
+		F7D00DE819B9816B0012A293 /* section-perfil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "section-perfil.png"; sourceTree = "<group>"; };
+		F7D00DE919B9816B0012A293 /* trofeu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trofeu.png; sourceTree = "<group>"; };
 		F7D6951019B81352003F4BA9 /* WCIPerfilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCIPerfilViewController.h; sourceTree = "<group>"; };
 		F7D6951119B81352003F4BA9 /* WCIPerfilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCIPerfilViewController.m; sourceTree = "<group>"; };
 		F7D6951619B814B8003F4BA9 /* WCIMissionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCIMissionDetailViewController.h; sourceTree = "<group>"; };
@@ -291,6 +315,18 @@
 		F7D00DC919B915E80012A293 /* imagens */ = {
 			isa = PBXGroup;
 			children = (
+				F7D00DDE19B9816B0012A293 /* background2.png */,
+				F7D00DDF19B9816B0012A293 /* btn-comprar.png */,
+				F7D00DE019B9816B0012A293 /* btn-enviar.png */,
+				F7D00DE119B9816B0012A293 /* btn-lerqrcode.png */,
+				F7D00DE219B9816B0012A293 /* interven-iconTab.png */,
+				F7D00DE319B9816B0012A293 /* missao-iconTab.png */,
+				F7D00DE419B9816B0012A293 /* moeda.png */,
+				F7D00DE519B9816B0012A293 /* perfil-iconTab.png */,
+				F7D00DE619B9816B0012A293 /* perfil-iconTab(2).png */,
+				F7D00DE719B9816B0012A293 /* ranking-iconTab.png */,
+				F7D00DE819B9816B0012A293 /* section-perfil.png */,
+				F7D00DE919B9816B0012A293 /* trofeu.png */,
 				F7D00DD419B9198F0012A293 /* btn-entrar.png */,
 				F7D00DD519B9198F0012A293 /* background.png */,
 				F7D00DCA19B915E80012A293 /* btn-cadastrar.png */,
@@ -382,14 +418,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7D00DF319B9816B0012A293 /* ranking-iconTab.png in Resources */,
+				F7D00DF519B9816B0012A293 /* trofeu.png in Resources */,
 				F724AE0319B6688100BDEB49 /* CoinBLEDemo-Info.plist in Resources */,
 				F7D00DD119B915E80012A293 /* exploreLogo.png in Resources */,
+				F7D00DEA19B9816B0012A293 /* background2.png in Resources */,
 				F7D00DD719B9198F0012A293 /* background.png in Resources */,
 				F7D00DCF19B915E80012A293 /* btn-cadastrar.png in Resources */,
+				F7D00DF119B9816B0012A293 /* perfil-iconTab.png in Resources */,
+				F7D00DED19B9816B0012A293 /* btn-lerqrcode.png in Resources */,
 				BBC36BD219B5F16B00D432CD /* Main_iPad.storyboard in Resources */,
+				F7D00DEE19B9816B0012A293 /* interven-iconTab.png in Resources */,
 				BBC36BD719B5F16B00D432CD /* Images.xcassets in Resources */,
+				F7D00DEC19B9816B0012A293 /* btn-enviar.png in Resources */,
+				F7D00DEB19B9816B0012A293 /* btn-comprar.png in Resources */,
+				F7D00DF219B9816B0012A293 /* perfil-iconTab(2).png in Resources */,
 				F7D00DD219B915E80012A293 /* loginFB.png in Resources */,
+				F7D00DEF19B9816B0012A293 /* missao-iconTab.png in Resources */,
 				F78EB2D619B88838006F92D7 /* xx.mp4 in Resources */,
+				F7D00DF419B9816B0012A293 /* section-perfil.png in Resources */,
+				F7D00DF019B9816B0012A293 /* moeda.png in Resources */,
 				F7D00DD019B915E80012A293 /* btn-cancelar.png in Resources */,
 				BBC36BCF19B5F16B00D432CD /* Main_iPhone.storyboard in Resources */,
 				BBC36BC619B5F16B00D432CD /* InfoPlist.strings in Resources */,
