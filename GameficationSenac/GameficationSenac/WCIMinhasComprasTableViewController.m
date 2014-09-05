@@ -16,6 +16,8 @@
 
 @implementation WCIMinhasComprasTableViewController
 
+#define SearchTimeOut 1
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -29,13 +31,18 @@
 {
     [super viewDidLoad];
     
-    minhasCompras = [NSArray arrayWithObjects:@"minhaCompra1", @"minhaCompra2", @"minhaCompra3", nil];
+    minhasCompras = [NSArray arrayWithObjects:@"Árveres & Luzes", nil];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    t = [bluekitBle getSharedInstance];
+    [t controlSetup:1];
+    t.delegate = self;
+    isConnect = NO;
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,6 +53,10 @@
 
 - (IBAction)unwindSegue:(UIStoryboardSegue *)segue{
     
+}
+
+- (IBAction)doSearchDev:(id)sender{
+    [self DoSearch];
 }
 
 #pragma mark - Table view data source
@@ -65,7 +76,23 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"clicou");
     
-    [self performSegueWithIdentifier:@"toUsarIntervencao" sender:self];
+    
+    if([t.peripherals count] > 0 && t.peripherals != nil){
+        self.gSelectDev = [t.peripherals firstObject];
+        
+        switch (indexPath.row) {
+            case 0:
+                [self performSegueWithIdentifier:@"toIntervencaoArvore" sender:self];
+                break;
+                
+            default:
+                break;
+        }
+    }
+    
+    else{
+        [self ShowMessage:@"Não está conectado!" msg:@"Não há conexão bluetooth com a intervenção!"];
+    }
 }
 
 
@@ -78,10 +105,107 @@
     }
     
     // Configure the cell...
+    cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:20];
     cell.textLabel.text = [minhasCompras objectAtIndex:indexPath.row];
     
     return cell;
+}
+
+-(void)bluekitDisconnect
+{
+    NSLog(@"bluekitDisconnect");
+}
+
+
+-(void) RxValueUpdate:(Byte *)buf
+{
+    if (t.activePeripheral != nil)
+    {
+        NSLog(@"connect!");
+    }
+}
+
+-(void) deviceFoundUpdate:(CBPeripheral *)p
+{
+    printf("Do device Found Update");
+}
+
+-(void) disconnectBle
+{
+    [t cancelConnectPeripheral];
+}
+
+
+-(void) DoSearch
+{
+    t.peripherals = nil;
+    
+    if (t.activePeripheral)
+    {
+        [t cancelConnectPeripheral];
+        t.peripherals = nil;
+    }
+    [t findBLEPeripherals:SearchTimeOut];
+    [NSTimer scheduledTimerWithTimeInterval:(float)SearchTimeOut target:self selector:@selector(connectionTimer:) userInfo:nil repeats:NO];
+}
+
+-(void) connectionTimer:(NSTimer *)timer
+{
+	NSLog(@"%d", [t.peripherals count]);
+}
+
+-(void)ShowMessage:(NSString *) title msg:(NSString *) message
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
+                                                    message:message
+                                                   delegate:self
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:@"Cancel", nil];
+    [alert show];
+}
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex{
+    if (buttonIndex == 0) {
+        [self DoSearch];
+    }
+}
+
+-(void)doStopIndicator{
+    if(t.activePeripheral !=nil)
+    {
+        NSLog(@"Connected!");
+    }
+    else
+    {
+        NSLog(@"Disconnect");
+    }
+}
+
+- (IBAction)doDeviceConnect:(id)sender {
+    
+    t = [bluekitBle getSharedInstance];
+    if(t.activePeripheral)
+    {
+        [t controlSetup:1];
+        t.delegate = self;
+        [t cancelConnectPeripheral];
+    }
+    else
+    {
+        [self DoSearch];
+        [self performSelector:@selector(doStopIndicator) withObject:nil afterDelay:5.0];
+        
+    }
+}
+
+-(void) updateRssiValue:(int)rssi
+{
+    
+}
+-(void) blueConnect
+{
+    
 }
 
 /*
@@ -126,13 +250,11 @@
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if([segue.identifier isEqualToString:@"toUsarIntervencao"]){
-        NSIndexPath *path = [self.tableView indexPathForSelectedRow];
-        
-        BluetoothViewController *vc = segue.destinationViewController;
-        vc.numberIntervencao = path.row + 1;
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if(self.gSelectDev != nil){
+        NSLog(@"set");
+        id destVC = segue.destinationViewController;
+        [destVC setValue:self.gSelectDev forKey:@"gConDev"];
     }
 }
 

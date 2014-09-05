@@ -7,8 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BluetoothViewController.h"
+#import "bluekitBle.h"
+#import <CoreBluetooth/CBPeripheral.h>
 
-@interface WCIMinhasComprasTableViewController : UITableViewController
+@interface WCIMinhasComprasTableViewController : UITableViewController<blueKitBLEDelegate, UITableViewDataSource>
+{
+    bluekitBle *t;
+    Boolean isConnect;
+}
+
+@property (weak, nonatomic) IBOutlet CBPeripheral *gSelectDev;
+
+- (IBAction)doSearchDev:(id)sender;
 
 @end

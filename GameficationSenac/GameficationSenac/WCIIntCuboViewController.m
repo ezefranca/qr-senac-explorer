@@ -1,24 +1,33 @@
 //
-//  BluetoothViewController.m
+//  WCIIntCuboViewController.m
 //  GameficationSenac
 //
-//  Created by Ezequiel Franca dos Santos on 02/09/14.
+//  Created by Danilo Makoto Ikuta on 05/09/14.
 //  Copyright (c) 2014 Danilo Makoto Ikuta. All rights reserved.
 //
 
-#import "BluetoothViewController.h"
+#import "WCIIntCuboViewController.h"
 
-@interface BluetoothViewController ()
+@interface WCIIntCuboViewController ()
 
 @end
 
-@implementation BluetoothViewController
+@implementation WCIIntCuboViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
     self.conectado = FALSE;
-
+    
     [[CNBluetoothCentral sharedBluetoothCentral] setDelegate:self];
     
     //    (void)setBackgroundColor:(UIColor*)color; // default is [UIColor whiteColor]
@@ -28,7 +37,10 @@
     //    + (void)setSuccessImage:(UIImage*)image; // default is bundled success image from Glyphish
     //    + (void)setErrorImage:(UIImage*)image; // default is bundled error image from Glyphish
     
+    NSLog(@"Conectando...");
+    [[CNBluetoothCentral sharedBluetoothCentral] startCentral];
 }
+
 - (void)handleNotification:(NSNotification *)notif{
     NSLog(@"Notification recieved: %@", notif.name);
 }
@@ -39,17 +51,12 @@
 
 
 - (void)viewWillDisappear:(BOOL)animated{
-
+    
     [[CNBluetoothCentral sharedBluetoothCentral] cleanup];
     [[CNBluetoothCentral sharedBluetoothCentral] setDelegate:nil];
 }
 -(void)viewDidAppear:(BOOL)animated{
-
-}
-
-- (IBAction)botaoConectar:(id)sender {
-    NSLog(@"Conectando...");
-    [[CNBluetoothCentral sharedBluetoothCentral] startCentral];
+    
 }
 
 - (void)didReceiveMemoryWarning{
@@ -115,7 +122,7 @@
 -(void)enviarLixo{
     //Metodo de enviar
     NSString *enviar =  @"$teste";
-
+    
     [self enviarDadosBluetooth:enviar];
 }
 
@@ -179,24 +186,35 @@
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
-//    switch (buttonIndex) {
-//        case 0:
-//            [self setTipo:1];
-//            break;
-//        case 1:
-//            [self setTipo:2];
-//            break;
-//        case 2:
-//            [self setTipo:3];
-//            break;
-//        case 3:
-//            [self setTipo:4];
-//            break;
-//        default:
-//            [self setTipo:0];
-//            break;
-//    }
+    //    switch (buttonIndex) {
+    //        case 0:
+    //            [self setTipo:1];
+    //            break;
+    //        case 1:
+    //            [self setTipo:2];
+    //            break;
+    //        case 2:
+    //            [self setTipo:3];
+    //            break;
+    //        case 3:
+    //            [self setTipo:4];
+    //            break;
+    //        default:
+    //            [self setTipo:0];
+    //            break;
+    //    }
     [self enviarLixo];
 }
-@end
 
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end
