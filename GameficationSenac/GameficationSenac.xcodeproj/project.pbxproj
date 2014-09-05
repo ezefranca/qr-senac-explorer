@@ -36,6 +36,15 @@
 		F724AE0D19B6814B00BDEB49 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F724AE0C19B6814B00BDEB49 /* LoginViewController.m */; };
 		F724AE1019B6820800BDEB49 /* TabBarGeralController.m in Sources */ = {isa = PBXBuildFile; fileRef = F724AE0F19B6820800BDEB49 /* TabBarGeralController.m */; };
 		F78EB2D619B88838006F92D7 /* xx.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F78EB2D519B88838006F92D7 /* xx.mp4 */; };
+		F7D00DCF19B915E80012A293 /* btn-cadastrar.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D00DCA19B915E80012A293 /* btn-cadastrar.png */; };
+		F7D00DD019B915E80012A293 /* btn-cancelar.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D00DCB19B915E80012A293 /* btn-cancelar.png */; };
+		F7D00DD119B915E80012A293 /* exploreLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D00DCC19B915E80012A293 /* exploreLogo.png */; };
+		F7D00DD219B915E80012A293 /* loginFB.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D00DCD19B915E80012A293 /* loginFB.png */; };
+		F7D00DD319B915E80012A293 /* loginMail.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D00DCE19B915E80012A293 /* loginMail.png */; };
+		F7D00DD619B9198F0012A293 /* btn-entrar.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D00DD419B9198F0012A293 /* btn-entrar.png */; };
+		F7D00DD719B9198F0012A293 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = F7D00DD519B9198F0012A293 /* background.png */; };
+		F7D00DDA19B91AF80012A293 /* WCITelaCadastroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D00DD919B91AF80012A293 /* WCITelaCadastroViewController.m */; };
+		F7D00DDD19B925A20012A293 /* WCITelaLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D00DDC19B925A20012A293 /* WCITelaLoginViewController.m */; };
 		F7D6951219B81352003F4BA9 /* WCIPerfilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D6951119B81352003F4BA9 /* WCIPerfilViewController.m */; };
 		F7D6951819B814B8003F4BA9 /* WCIMissionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D6951719B814B8003F4BA9 /* WCIMissionDetailViewController.m */; };
 		F7D6951B19B8157C003F4BA9 /* MissionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7D6951A19B8157C003F4BA9 /* MissionTableViewController.m */; };
@@ -99,6 +108,17 @@
 		F724AE0E19B6820800BDEB49 /* TabBarGeralController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarGeralController.h; sourceTree = "<group>"; };
 		F724AE0F19B6820800BDEB49 /* TabBarGeralController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarGeralController.m; sourceTree = "<group>"; };
 		F78EB2D519B88838006F92D7 /* xx.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = xx.mp4; sourceTree = "<group>"; };
+		F7D00DCA19B915E80012A293 /* btn-cadastrar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-cadastrar.png"; sourceTree = "<group>"; };
+		F7D00DCB19B915E80012A293 /* btn-cancelar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-cancelar.png"; sourceTree = "<group>"; };
+		F7D00DCC19B915E80012A293 /* exploreLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exploreLogo.png; sourceTree = "<group>"; };
+		F7D00DCD19B915E80012A293 /* loginFB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginFB.png; sourceTree = "<group>"; };
+		F7D00DCE19B915E80012A293 /* loginMail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginMail.png; sourceTree = "<group>"; };
+		F7D00DD419B9198F0012A293 /* btn-entrar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-entrar.png"; sourceTree = "<group>"; };
+		F7D00DD519B9198F0012A293 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		F7D00DD819B91AF80012A293 /* WCITelaCadastroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WCITelaCadastroViewController.h; path = GameficationSenac/WCITelaCadastroViewController.h; sourceTree = SOURCE_ROOT; };
+		F7D00DD919B91AF80012A293 /* WCITelaCadastroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WCITelaCadastroViewController.m; path = GameficationSenac/WCITelaCadastroViewController.m; sourceTree = SOURCE_ROOT; };
+		F7D00DDB19B925A20012A293 /* WCITelaLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCITelaLoginViewController.h; sourceTree = "<group>"; };
+		F7D00DDC19B925A20012A293 /* WCITelaLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCITelaLoginViewController.m; sourceTree = "<group>"; };
 		F7D6951019B81352003F4BA9 /* WCIPerfilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCIPerfilViewController.h; sourceTree = "<group>"; };
 		F7D6951119B81352003F4BA9 /* WCIPerfilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCIPerfilViewController.m; sourceTree = "<group>"; };
 		F7D6951619B814B8003F4BA9 /* WCIMissionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCIMissionDetailViewController.h; sourceTree = "<group>"; };
@@ -164,9 +184,14 @@
 		BBC36BC119B5F16B00D432CD /* GameficationSenac */ = {
 			isa = PBXGroup;
 			children = (
+				F7D00DC919B915E80012A293 /* imagens */,
 				F78EB2D419B88838006F92D7 /* assets */,
 				F7D6951919B8157C003F4BA9 /* MissionTableViewController.h */,
+				F7D00DDB19B925A20012A293 /* WCITelaLoginViewController.h */,
+				F7D00DDC19B925A20012A293 /* WCITelaLoginViewController.m */,
 				F7D6951A19B8157C003F4BA9 /* MissionTableViewController.m */,
+				F7D00DD819B91AF80012A293 /* WCITelaCadastroViewController.h */,
+				F7D00DD919B91AF80012A293 /* WCITelaCadastroViewController.m */,
 				F7D6951619B814B8003F4BA9 /* WCIMissionDetailViewController.h */,
 				F7D6951719B814B8003F4BA9 /* WCIMissionDetailViewController.m */,
 				BBC36BCA19B5F16B00D432CD /* WCIAppDelegate.h */,
@@ -263,6 +288,20 @@
 			path = assets;
 			sourceTree = "<group>";
 		};
+		F7D00DC919B915E80012A293 /* imagens */ = {
+			isa = PBXGroup;
+			children = (
+				F7D00DD419B9198F0012A293 /* btn-entrar.png */,
+				F7D00DD519B9198F0012A293 /* background.png */,
+				F7D00DCA19B915E80012A293 /* btn-cadastrar.png */,
+				F7D00DCB19B915E80012A293 /* btn-cancelar.png */,
+				F7D00DCC19B915E80012A293 /* exploreLogo.png */,
+				F7D00DCD19B915E80012A293 /* loginFB.png */,
+				F7D00DCE19B915E80012A293 /* loginMail.png */,
+			);
+			path = imagens;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -344,11 +383,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F724AE0319B6688100BDEB49 /* CoinBLEDemo-Info.plist in Resources */,
+				F7D00DD119B915E80012A293 /* exploreLogo.png in Resources */,
+				F7D00DD719B9198F0012A293 /* background.png in Resources */,
+				F7D00DCF19B915E80012A293 /* btn-cadastrar.png in Resources */,
 				BBC36BD219B5F16B00D432CD /* Main_iPad.storyboard in Resources */,
 				BBC36BD719B5F16B00D432CD /* Images.xcassets in Resources */,
+				F7D00DD219B915E80012A293 /* loginFB.png in Resources */,
 				F78EB2D619B88838006F92D7 /* xx.mp4 in Resources */,
+				F7D00DD019B915E80012A293 /* btn-cancelar.png in Resources */,
 				BBC36BCF19B5F16B00D432CD /* Main_iPhone.storyboard in Resources */,
 				BBC36BC619B5F16B00D432CD /* InfoPlist.strings in Resources */,
+				F7D00DD619B9198F0012A293 /* btn-entrar.png in Resources */,
+				F7D00DD319B915E80012A293 /* loginMail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +416,7 @@
 				F724AE0D19B6814B00BDEB49 /* LoginViewController.m in Sources */,
 				F7D6951819B814B8003F4BA9 /* WCIMissionDetailViewController.m in Sources */,
 				BBC36BCC19B5F16B00D432CD /* WCIAppDelegate.m in Sources */,
+				F7D00DDA19B91AF80012A293 /* WCITelaCadastroViewController.m in Sources */,
 				F724AE0219B6688100BDEB49 /* CNBluetoothCentral.m in Sources */,
 				F7D6951B19B8157C003F4BA9 /* MissionTableViewController.m in Sources */,
 				F7D6951219B81352003F4BA9 /* WCIPerfilViewController.m in Sources */,
@@ -382,6 +429,7 @@
 				BB94267719B8A82A005BF86A /* WCIMinhasComprasTableViewController.m in Sources */,
 				F724AE1019B6820800BDEB49 /* TabBarGeralController.m in Sources */,
 				BB94267A19B8AC22005BF86A /* WCIRankingTableViewController.m in Sources */,
+				F7D00DDD19B925A20012A293 /* WCITelaLoginViewController.m in Sources */,
 				BBC36BC819B5F16B00D432CD /* main.m in Sources */,
 				F724AE0819B668B100BDEB49 /* webService.m in Sources */,
 				BBC36BD519B5F16B00D432CD /* WCIViewController.m in Sources */,

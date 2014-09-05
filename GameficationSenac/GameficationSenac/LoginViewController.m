@@ -106,4 +106,9 @@
     
     [self performSegueWithIdentifier:@"Login" sender:self];
 }
+
+- (IBAction)botaoCadastro:(id)sender {
+    NSLog(@"Cadastro");
+    [self performSegueWithIdentifier:@"Cadastro" sender:self];
+}
 @end

@@ -19,5 +19,7 @@
 @property (strong, nonatomic) IBOutlet UIView *contentView;
 
 - (IBAction)botaoLogin:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *botaoCadastro;
+- (IBAction)botaoCadastro:(id)sender;
 
 @end
